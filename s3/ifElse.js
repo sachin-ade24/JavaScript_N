@@ -1,5 +1,5 @@
 /*note: Do not write 'break' in if-else blocks. Because it is not supported in the if-else of the JavaScript. 
-        It is supported for the 'for' loops and switch-case statements in the JavaScript.
+        It is supported for the 'for', 'while', 'do-while' loops and switch-case statements in the JavaScript.
         If use the 'if-else' within 'for loop' or 'switch-case' then the 'break' is valid.
 */
 
