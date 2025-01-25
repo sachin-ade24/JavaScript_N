@@ -128,3 +128,12 @@ let n = [1, 2, 3, 4, 5, 6, 7];
 n.forEach((e, i) => {
   console.log(`'e': ${e} and i: ${i} and addition is: ${e + i}`);
 });
+
+//o/p: here, 'e' --> element of an array | 'i' --> index of the element
+//'e': 1 and i: 0 and addition is: 1
+//'e': 2 and i: 1 and addition is: 3
+//'e': 3 and i: 2 and addition is: 5
+//'e': 4 and i: 3 and addition is: 7
+//'e': 5 and i: 4 and addition is: 9
+//'e': 6 and i: 5 and addition is: 11
+//'e': 7 and i: 6 and addition is: 13
