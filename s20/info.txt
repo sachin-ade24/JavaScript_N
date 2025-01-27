@@ -1,1 +1,1 @@
-Hi, I am learning javaScript.
+Hi, I am learning JavaScript.
