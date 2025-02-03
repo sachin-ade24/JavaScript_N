@@ -1,11 +1,20 @@
 //1. every(): every element in an array should pass the condition
 //returns boolean
+/*
+The every method tests whether all elements in the array pass the test implemented 
+by the provided function. It returns a Boolean value.
+*/
 let num = [1, 2, 3, 4, 5];
 let flag = num.every((e) => e < 10);
 console.log(flag); //true
 
 //2. some(): at least one element of an array should pass the condition
 //opposite of every
+/*
+The some method tests whether at least one element in the array passes 
+the test implemented by the provided function. 
+It returns a Boolean value.
+*/
 let number = [1, 2, 3, 4, 5];
 let fg = number.some((e) => e % 2 === 0);
 console.log(fg); //true
@@ -13,6 +22,11 @@ let f = number.some((b) => b > 20);
 console.log(f); //false
 
 //3.find():
+/*
+The find method returns the value of the first element in the array 
+that satisfies the provided testing function. 
+If no elements satisfy the testing function, undefined is returned.
+*/
 let numb1 = [1, 2, 3, 7, 9];
 let firstElement = numb1.find((n) => n % 2 === 0);
 console.log(firstElement); //2
@@ -69,3 +83,14 @@ console.log(sortedArr2);
     'iPhone'
 ]
 */
+
+//
+let fruits = ['apple', 'banana', 'cherry'];
+
+// Using spread operator
+let fruitsCopy1 = [...fruits];
+console.log(fruitsCopy1);
+
+// Using Array.from method
+let fruitsCopy2 = Array.from(fruits);
+console.log(fruitsCopy2);

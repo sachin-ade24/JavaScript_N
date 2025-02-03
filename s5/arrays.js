@@ -7,7 +7,7 @@ let fruits = ["apple", "banana", "orange"];
 let lang = ["Java", "Python", "JavaScript"];
 //methods
 //1.push: add the new element at the end of the array
-//Appends new elements to the end of an array, and returns the new length of the array.
+//Appends new elements at the end of an array, and returns the new length of the array.
 lang.push("Ruby", "HTML");
 console.log(lang);
 
@@ -101,6 +101,16 @@ console.log(mixedArray1); //[ 'apple', 'banana', 'orange', 1, 2, 3, 4 ]
 let mixedArray2 = num.concat(fr);
 console.log(mixedArray2); //[ 1, 2, 3, 4, 'apple', 'banana', 'orange' ]
 
+//
+let fruits2 = ["apple", "banana"];
+let moreFruits = ["cherry", "mango"];
+// Using concat method
+let allFruits2 = fruits.concat(moreFruits);
+console.log(allFruits2);
+// Using spread operator
+let allFruits3 = [...fruits, ...moreFruits];
+console.log(allFruits3);
+
 //8.indexOf:
 let colorsNew = ["red", "green", "blue", "red"];
 let firstOccurrenceOfRed = colorsNew.indexOf("red");
@@ -137,3 +147,6 @@ n.forEach((e, i) => {
 //'e': 5 and i: 4 and addition is: 9
 //'e': 6 and i: 5 and addition is: 11
 //'e': 7 and i: 6 and addition is: 13
+
+let fruits1 = ["apple", "banana"];
+console.log(Array.isArray(fruits1));

@@ -4,7 +4,7 @@ function print() {
 }
 
 print(); //hi undefined age undefined --> still executes 3rd function only
-//it kdoesn't matter whether you are calling your function after 1st function, 2nd function or 3rd function
+//it doesn't matter whether you are calling your function after 1st function, 2nd function or 3rd function
 
 function print(name) {
   console.log("hi " + name);

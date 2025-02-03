@@ -3,6 +3,7 @@ console.log("JavaScript".length);
 
 //2.
 console.log("JavaScript"[2]); //v
+console.log("Sachin"[-1]); //undefined
 
 //3. charAt
 console.log("JavaScript".charAt(4)); //S
@@ -26,12 +27,17 @@ console.log("JavaScript".substring(-2, 2));
 //8. concat
 console.log("Sachin".concat(" Baburao").concat(" Ade"));
 
+console.log("==========================================");
+
 //9. split
 let lang = "Java_JavaScript_Python";
 const splittedLangArr = lang.split("_");
+console.log(splittedLangArr); //[ 'Java', 'JavaScript', 'Python' ]
 console.log(splittedLangArr[0]); //Java
 console.log(splittedLangArr[1]); //Python
 console.log(splittedLangArr[5]); //undefined
+
+console.log("==========================================");
 
 //10. includes
 console.log("JavaScript".includes("Java")); //true

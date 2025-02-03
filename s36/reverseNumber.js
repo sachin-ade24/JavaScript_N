@@ -10,6 +10,7 @@ function reverseNumber(num) {
   let reverseNum = 0;
   while (num != 0) {
     reverseNum = reverseNum * 10 + (num % 10); //3, 32, 321
+    //num = parseInt(num / 10); //12, 1
     num = Math.floor(num / 10); //12, 1
   }
   return reverseNum;
