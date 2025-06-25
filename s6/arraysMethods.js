@@ -25,7 +25,7 @@ console.log(celciusTemp); //[ 0, 20, 30, 40, 100 ]
 
 //2. filter
 /*
-The filter method creates a new array with all elements that pass the test implemented by the provided function. 
+The filter method creates a new array with all elements that pass the condition implemented by the provided function. 
 It calls the function for each element in the array 
 and includes the element in the new array if the function returns true.
 The filter method does not modify the original array 
@@ -45,10 +45,40 @@ let employee = [
   { name: "Priya", age: 25, gender: "female" },
   { name: "Peter", age: 55, gender: "male" }
 ];
+
+let empNameStatsWithJ = employee.filter((emp)=>{
+  return emp["name"].startsWith("J");
+});
+console.log(empNameStatsWithJ);
+
 let femaleEmpOver30 = employee.filter((emp) => {
   return emp.gender === "female" && emp.age > 30;
 });
 console.log(femaleEmpOver30); //[ { name: 'Lisa', age: 40, gender: 'female' } ]
+
+let maleEmp = employee.filter((emp)=>{
+  return emp.gender === "male";
+})
+console.log(maleEmp);
+
+let femaleEmp = employee.filter((emp)=>emp.gender === "female");
+console.log(femaleEmp);
+
+console.log(employee[0].name);
+console.log(employee[4].gender)
+
+for(let i = 0; i<employee.length; i++){
+  console.log(employee[i]);
+}
+
+employee.forEach((emp)=>{
+  console.log(`The name of employee: ${emp.name}`);
+})
+
+employee.forEach((emp, index)=>{
+  console.log(`The information for the employee no. ${index} is given below --> \nName: ${emp.name}, Age: ${emp.age}, Gender: ${emp.gender}`);
+})
+
 
 //3. reduce
 /*
@@ -105,3 +135,25 @@ let totalPrice = cartItems.reduce(
   0
 );
 console.log(totalPrice); //2300
+
+
+let num1 = [10, 5, 25, 8, 30, 15];
+
+let maxNum1 = num1.reduce((acc, num)=> {
+  if(acc>num){
+    return acc;
+  }else{
+    return num;
+  }
+}, num1[0]);
+console.log(maxNum1);
+
+let minNum1 = num1.reduce((acc, num)=>{
+  if(acc<num){
+    return acc;
+  }else{
+    return num;
+  }
+}, num1[0]);
+
+console.log(minNum1);

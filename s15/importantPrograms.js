@@ -23,6 +23,11 @@ const floatNum = 3.76;
 const intNum = parseInt(floatNum);
 console.log(intNum); //3
 
+//4. int to float
+const intNum1 = 57;
+const floatNum1 = parseFloat(intNum1);
+console.log(floatNum1.toFixed(2));
+
 //4. check if a variable is a number
 const value = 56;
 if (typeof value === "number" && !isNaN(value)) {
@@ -31,11 +36,23 @@ if (typeof value === "number" && !isNaN(value)) {
   console.log(`${value} is not a number.`);
 }
 
+const value1 = "56";
+if(typeof value1 === "number" && ! isNaN(value1)){
+  console.log(`${value1} is a number`);
+} else{
+   console.log(`${value1} is not a number`);
+}
+
 //5. swap variable values
 let a = 5;
 let b = 10;
 [a, b] = [b, a];
 console.log(a, b);
+
+let c = 60;
+let d = 70;
+[c, d] = [d, c]
+console.log(d, c);
 
 //6. check if an object has a property
 const person = {
@@ -44,6 +61,14 @@ const person = {
 };
 if (person.hasOwnProperty("name")) {
   console.log("Person has name property.");
+}
+
+const person1 = {
+  name: "Sachin",
+  age: 36
+};
+if(person1.hasOwnProperty("age")){
+    console.log("Person has age property.");
 }
 
 //7. remove falsy value from the array: (false, 0, "", null, undefined, NaN):

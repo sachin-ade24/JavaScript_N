@@ -54,3 +54,19 @@ function launchBrowser(browser) {
 }
 launchBrowser("ChRome");
 launchBrowser("Opera");
+
+
+function launchUrl(url){
+  switch(url){
+    case "Amazon":
+      console.log("amazon.com");
+      break;
+    case "Flipkart":
+      console.log("flipkart.com");
+      break;
+    default:
+      console.log("Invalid input");
+      break;
+  }
+}
+launchUrl("Amazon");

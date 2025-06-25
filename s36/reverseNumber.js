@@ -17,3 +17,18 @@ function reverseNumber(num) {
 }
 
 console.log(reverseNumber(123));
+
+
+
+function revNum(num){
+  if(num>=0 && num<=9){
+    return num;
+  }
+  let revNum = 0;
+  while(num!=0){
+    revNum = revNum*10 + (num%10);
+    num = Math.floor(num/10);
+  }
+  return revNum;
+}
+console.log(revNum(23098));

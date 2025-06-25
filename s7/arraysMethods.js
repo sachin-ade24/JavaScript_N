@@ -8,6 +8,9 @@ let num = [1, 2, 3, 4, 5];
 let flag = num.every((e) => e < 10);
 console.log(flag); //true
 
+let f1 = num.every((e)=> e>0);
+console.log(f1);
+
 //2. some(): at least one element of an array should pass the condition
 //opposite of every
 /*
@@ -20,6 +23,9 @@ let fg = number.some((e) => e % 2 === 0);
 console.log(fg); //true
 let f = number.some((b) => b > 20);
 console.log(f); //false
+
+let s1 = number.some((e)=> e%5 === 0);
+console.log(number);
 
 //3.find():
 /*

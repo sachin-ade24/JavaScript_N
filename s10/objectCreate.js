@@ -71,3 +71,42 @@ const dept2 = createDepartment("Maths", "Shri Ramanujan");
 dept1.getDepartmentInfo(); //The department name is Physics and hod is H C Verma
 dept2.getDepartmentInfo(); //The department name is Maths and hod is Shri Ramanujan
 console.log(`Departrmrnt: ${dept1.deptName} | HOD: ${dept1.hod}`); // Departrmrnt: Physics | HOD: H C Verma
+
+let objectArr = [
+  {name: "Prince", age: 4, class: "Nursery"},
+  {name: "Samarth", age: 2, class: "Play group"},
+  {name: "Sachi", age: 1, class: "Play group"},
+  {name: "Advik", age: 4, class: "Nursery"}
+]
+
+let newArr1 = objectArr.filter((element) =>  {return element.age === 4 && element.class === "Nursery"});
+console.log(newArr1[0].name);
+
+objectArr.forEach((e)=>{
+  console.log(`Name: ${e.name} | Age: ${e.age} | Class: ${e.class}`);
+})
+
+//
+for(const e in objectArr){
+  console.log(objectArr[e]);
+}
+for(const e in objectArr){
+  console.log(`Name: ${objectArr[e].name} and Age: ${objectArr[e].age}`);
+}
+for(const ele in objectArr){
+  console.log(ele + `) ${objectArr[ele].name}`);
+}
+
+//for..in loop on object;
+const user1 = {
+  name: "John doe",
+  age: 30,
+  city: "New York City"
+};
+for (const key in user1) {
+  console.log(`${key}: ${user1[key]}`); //printing key value pair
+}
+
+for(const el of objectArr){
+  console.log(el);
+}
