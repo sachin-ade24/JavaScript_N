@@ -41,3 +41,22 @@ function findLargest(arr) {
 
 console.log(findLargest([99, 5, 3, 100, 1]));
 
+
+//Rotate elements of array to left
+const fruits = ["Banana", "Apple", "Mango", "Orange"];
+let n = 2;
+for (let i = 1; i <= n; i++) {
+    let ele = fruits.shift();
+    fruits.push(ele);
+}
+console.log(fruits);
+//o/p: [ 'Mango', 'Orange', 'Banana', 'Apple' ]
+
+
+//Rotate elements of array to right
+for (let i = 1; i <= n; i++) {
+    let ele = fruits.pop();
+    fruits.unshift(ele);
+}
+console.log(fruits);
+//o/p: [ 'Mango', 'Orange', 'Banana', 'Apple' ]
