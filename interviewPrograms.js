@@ -3,21 +3,18 @@
 //1. count frequency of characters
 function getCharFreq(strg){
 	let freq = {};
-    
     for(let char of strg){
     	freq[char] = (freq[char] || 0) + 1;
     }
-    
     return freq;
 }
-
 let str = "Hhello world.."
 console.log(getCharFreq(str));
 
 
 //2. Reverse a string
 function reverseTheString(str){
-  return str.spilt("").reverse().join("");
+  return str.split("").reverse().join("");
 }
 console.log(reverseTheString("Sachin Ade."))
 
