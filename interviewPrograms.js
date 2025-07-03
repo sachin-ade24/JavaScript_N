@@ -60,3 +60,45 @@ for (let i = 1; i <= n; i++) {
 }
 console.log(fruits);
 //o/p: [ 'Mango', 'Orange', 'Banana', 'Apple' ]
+
+
+//Remove element of an array using splice():
+const numbers = [1, 2, 3, 4, 5];
+const num1 = numbers.splice(0, 1);
+console.log(num1);
+console.log(numbers);
+console.log(numbers.toString());
+
+
+//find():
+const numbers1 = [4, 9, 16, 25, 29];
+let first = numbers1.find((value) => {
+    return value > 40;
+});
+console.log(first);
+
+
+//Ascending order
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+    return a - b;
+});
+console.log(points);//[ 1, 5, 10, 25, 40, 100 ]
+
+
+//Descending order
+points.sort(function (a, b) {
+    return b - a;
+})
+console.log(points);//[ 100, 40, 25, 10, 5, 1 ]
+
+
+//Min number
+let arr = [1, 2, 3];
+const min = Math.min.apply(null, arr);
+console.log(min);
+
+
+//Max number
+const max = Math.max.apply(null, arr);
+console.log(max);
