@@ -72,3 +72,9 @@ console.log(blackColorIndex); //-1
 let test1 = ["admin", "customer", "seller", "vendor"];
 console.log(test1.includes("customer", "Sachin", "Ade")); //true
 // at least one element should be part of thr array
+
+//forEach
+let n = [1, 2, 3, 4, 5, 6, 7];
+n.forEach((e, i) => {
+  console.log(i + ": " + e);
+});
