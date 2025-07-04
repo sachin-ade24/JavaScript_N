@@ -3,6 +3,8 @@ const square = (num) => num * num;
 const result = square(5);
 console.log(result); //25
 
+const cube = (num)=>num*num*num;
+
 //2. no parameter arrow function
 const message = () => "hello JS";
 //console.log(message); //[Function: message]
@@ -24,6 +26,10 @@ console.log(fullName1); //Naveen Automation Labs
 const getFullName2 = () => `${person.firstName} ${person.lastName}`;
 const fullName2 = getFullName2();
 console.log(fullName2); //Naveen Automation Labs
+
+const someThing = () => { 
+  console.log("My name is Sachin.");
+}
 
 //
 const greet = (username = "guest", age = 20) =>
@@ -72,3 +78,8 @@ const minValue = (a, b, c) => {
 };
 console.log(maxValue(1, 2, 3)); //3
 console.log(minValue(1, 2, 3)); //1
+
+const maxVal = (e, f, g) => {
+  return Math.max(e, f, g);
+}
+console.log(maxVal(12, 23, 34));

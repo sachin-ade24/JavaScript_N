@@ -46,6 +46,10 @@ let employee = [
   { name: "Peter", age: 55, gender: "male" }
 ];
 
+employee.forEach((e)=>{
+  console.log(e.name);
+})
+
 let empNameStatsWithJ = employee.filter((emp)=>{
   return emp["name"].startsWith("J");
 });

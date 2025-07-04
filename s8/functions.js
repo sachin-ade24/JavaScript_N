@@ -30,10 +30,14 @@ const subtraction = new Function("a", "b", "return a - b;");
 const subtract = subtraction(10, 2);
 console.log(subtract); //8
 
+const addition = new Function("a", "b", "retun a + b;");
+const add = addition(10, 2);
+console.log(add);
+
 //5. Imediately Invoke function expression
 (function () {
   console.log("My name is Sachin.");
-})(); //My name is Sachin.
+})(); //My name is Sachin.tyy
 
 //6.Generator function: generates a sequence of values
 //'function*' and 'yield' keywords
