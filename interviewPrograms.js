@@ -102,3 +102,11 @@ console.log(min);
 //Max number
 const max = Math.max.apply(null, arr);
 console.log(max);
+
+
+//Reverse the words in a string
+let strN1 = "My name is Sachin.";
+let strN2 = strN1.split(" "); // Split into words
+let reversedWords = strN2.map(word => word.split("").reverse().join("")); // Reverse each word
+let finalStr = reversedWords.join(" "); // Keep word order, join with space
+console.log(finalStr); // Output: "yM eman si .nihcaS"
