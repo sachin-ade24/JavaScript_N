@@ -149,8 +149,8 @@ const user = {
 };
 for (const key in user) {
   console.log(`${key}: ${user[key]}`); //printing key value pair
+  //console.log(key + ": " + user.key);//value --> undefined
 }
-
 console.log("=================================");
 
 //for..in with Array:

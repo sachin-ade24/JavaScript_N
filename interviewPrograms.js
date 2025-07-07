@@ -110,3 +110,15 @@ let strN2 = strN1.split(" "); // Split into words
 let reversedWords = strN2.map(word => word.split("").reverse().join("")); // Reverse each word
 let finalStr = reversedWords.join(" "); // Keep word order, join with space
 console.log(finalStr); // Output: "yM eman si .nihcaS"
+
+/*
+const customPromise = new Promise((resolve)=>{
+    setTimeout(()=>{
+        resolve('promise resolved.')
+    }, 1000);
+})
+
+cy.wrap(customPromise).then((result)=>{
+    expect(result).to.eq('promise resolved.');
+})
+*/
