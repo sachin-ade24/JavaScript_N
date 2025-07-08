@@ -122,3 +122,13 @@ cy.wrap(customPromise).then((result)=>{
     expect(result).to.eq('promise resolved.');
 })
 */
+
+
+//Eliminate duplicate characters from the given string
+let str = "aababdbccdddefghefg";
+let arry1 = str.split("");
+let st = new Set(arry1);
+let arry2 = Array.from(st);
+let strUpdated = arry2.join("");
+console.log(strUpdated);
+//o/p: abdcefgh
